@@ -1,0 +1,50 @@
+.workImage:hover{
+   overflow: hidden;
+    transform: scale(1.02);
+}
+.linkBar{
+    height:2px;
+    /* visibility: hidden; */
+    /* display: none; */
+    /* animation: links 2s ; */
+    /* background:black; */
+    width:100%
+   
+}
+@keyframes links {
+    0%{
+        width:0%
+    }
+    100%{
+        width:100%
+    }
+}
+.link{
+    width:max-content;
+}
+.link:hover .linkBar{
+visibility: visible;
+/* display: block; */
+animation: links 2s ; 
+ background:black;
+}
+.logoSection{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    overflow: hidden;
+    animation: logoSection 10s;
+    transform: translate(-100%,0) infinite;
+
+
+}
+@keyframes logoSection {
+    0%{
+        transform: translate(-100%,0);
+    }
+
+    100%{
+        transform: translate(500%,0);
+
+    }
+}
